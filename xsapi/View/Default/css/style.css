@@ -1,0 +1,87 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
+  margin:0;
+  padding:0;
+}
+body {
+  font-size:12px;
+  font-family:"Helvetica Neue", "Hiragino Sans GB", sans-serif;
+  cursor:default;
+  background-color: rgb(238,243,250);
+
+}
+.main{
+  margin:0px auto;
+
+}
+.wrapper {
+    margin: 0px auto;
+    text-align: left;
+    width: 100%;
+}
+.contents {
+   padding:5px;
+}
+.block{
+    margin: 0px auto;
+    text-align: left;
+}
+.title, .mi_title{
+  padding:20px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:12px;
+  padding-bottom:12px;
+  margin:0px;
+  font-size:24px;
+  font-weight:600;
+}
+.title{
+  color:rgb(57,57,57);
+  background-color: rgb(224,224,224);
+}
+.mi_title{
+  color:rgb(196, 196, 196);
+  background-color: rgb(39,34,38);
+}
+
+.text, .mi_text{
+  padding:20px;
+  margin:0px;
+  font-weight:900;
+  font-size:23px;
+}
+
+.text{
+  color:rgb(134,134,134);
+  background-color: rgb(242,242,242);
+}
+
+.mi_text{
+ color:rgb(122, 122, 122);
+ background-color: rgb(46,41,47);
+}
+
+.paopao .title{
+  color:#000000;
+  background-color: #eeeae7;
+}
+
+.paopao .text{
+  color:#707070;
+  background-color:#FFFFFF;
+}
+
+.secend{
+  margin:0px;
+  font-weight:0;
+  
+}
+.secend  h5{
+  font-size:23px;
+}
+.secend p{
+  padding-bottom:5px;
+  padding-top:5px;
+  padding-left:5px;
+  font-size:23px;
+}

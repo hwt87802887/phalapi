@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>客服帮助</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://api.weiqire.com/Public/api/my/css/style.css" rel="stylesheet">
+  </head>
+  <style>
+.contact-box .row button.customer-tel{ border:none; text-align:left; padding:0; background-color:#fff; border-radius:0; display:inline; font-size:30rpx; color:#333; }
+.contact-box .row button.customer-tel::after{ content:none; }
+  </style>
+  <body class="gray-view">
+  
+    <div class="service-box clearfix">
+      <div class="row clearfix">
+        在线时间：周一至周六9:00-18:00
+      </div>
+      <div class="row clearfix">
+        客服QQ：<img src="https://api.weiqire.com/Public/api/my/images/qq.png" width="90" height="29" onclick="javascript:openQQ('<?=$qq?>')"> <label class="qq" style="margin-left:10px;"><?=$qq?></label>
+      </div>
+
+      <div class="row clearfix" style="white-space: nowrap;">
+      	QQ群1：<a onclick="javascript:openQQun()"><img src="https://api.weiqire.com/Public/api/my/images/qtwo-icon.png" width="90"></a> &nbsp;<label class="qq" style="margin-left:10px;"><?=$qq_qun?></label>
+      </div>
+    </div>
+
+
+    <div class="qa-box mt-10 clearfix">
+      <!--<div class="item clearfix">
+        <div class="q"><i class="icon-arrow"></i>手机登录注册收不到短信验证码怎么办？</div>
+        <div class="a">
+          答: 请检查手机是否有第三方软件拦截陌生短信，正常获取短信验证码在10秒左右，如果超过60秒请重新点击“获取验证码”。
+        </div>
+      </div>-->
+
+      <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+        <div class="q"><i class="icon-arrow"></i>如何充值阅读币？</div>
+        <div class="a">
+          答: 在“我的”界面点击“会员充值”按钮进行充值；充值后的阅读币不可兑换为现金，不予退款。
+        </div>
+      </div>
+        <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+            <div class="q"><i class="icon-arrow"></i>人民币与阅读币的兑换比例是多少？</div>
+            <div class="a">
+                答: 1元人民币=100阅读币。
+            </div>
+        </div>
+        <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+            <div class="q"><i class="icon-arrow"></i>金币能做什么？</div>
+            <div class="a">
+                答: 金币可兑换现金和阅读币，现金可以提现。
+            </div>
+        </div>
+        <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+            <div class="q"><i class="icon-arrow"></i>金币与阅读币的兑换比例是多少？</div>
+            <div class="a">
+                答: 1阅读币=10金币。
+            </div>
+        </div>
+      <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+        <div class="q"><i class="icon-arrow"></i>如何开通<?=$appname?>VIP会员？</div>
+        <div class="a">
+          答: 在“我的”界面点击“开通VIP”按钮进行充值。
+        </div>
+      </div>
+      <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+        <div class="q"><i class="icon-arrow"></i>充值或开通VIP不成功？</div>
+        <div class="a">
+          答: 确定支付成功，但是未充值到账或未开通VIP权限，遇到此问题请联系 <a style="color:#03F" onClick="javascript:openQQ('<?=$qq?>')" href="javascript:void(0)"><?=$appname?>客服</a>。
+        </div>
+      </div>
+      <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+        <div class="q"><i class="icon-arrow"></i><?=$appname?>如何查看我的充值记录？</div>
+        <div class="a">
+          答: 进入“我的”，点击【阅读币】，就能看到您的充值记录。
+        </div>
+      </div>
+      <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+        <div class="q"><i class="icon-arrow"></i>如何从书架中清除不想看的书？</div>
+        <div class="a">
+          答: 书架右上角编辑可以删除。
+        </div>
+      </div>
+      <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+        <div class="q"><i class="icon-arrow"></i>为什么我正在看的书看不了了？</div>
+        <div class="a">
+          答: 可能您所看的书，涉及敏感话题或者其它问题被暂时下架了，下架的书不能阅读。
+        </div>
+      </div>
+      <div class="item clearfix" style="-webkit-user-select: none;-webkit-tap-highlight-color: rgba(200,200,200,0);">
+        <div class="q"><i class="icon-arrow"></i>充值后已经有阅读余额了，还是不能看收费章节？</div>
+        <div class="a">
+          答: 请您看一下此时阅读收费章节的提示，如提现您购买，直接点购买即可阅读，如提示您充值，请联系客服。
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://api.weiqire.com/Public/api/my/js/jquery.min.js"></script>
+    <script>
+		var  client = "<?=$device?>";
+		$(document).ready(function() {
+			$('.qa-box .item').click(function() {
+				//console.log($(".service-box").height()+30);
+				//console.log($(this).index());
+				//console.log(window.innerHeight);
+				var height = 0;
+				for(var i=0;i <= $(this).index();i++){
+					height += $($('.qa-box .item').get(i)).height();
+				}
+				height += 124;
+				//console.log(height);
+				if(height > window.innerHeight){
+					$('html, body').animate({scrollTop:height-window.innerHeight+124}, 500);
+				}
+			  	if ($(this).hasClass('open')) {
+					$(this).removeClass('open');
+					$(this).find(".a").slideUp(800);
+					//$(this).find(".a").hide();
+					return;
+			  	}
+			  $(this).addClass('open');
+			  //$(this).find(".a").slideDown(800);
+			  $(this).find(".a").show();
+			})
+		})
+		
+	  	//呼出QQ会话
+		function openQQ(qq){
+			if(client == 'iphone'){
+				window.location.href = 'mqq://im/chat?chat_type=wpa&uin='+qq+'&version=1&src_type=web';
+			} else if(client == 'android') {
+				window.xiaoshuo.callQQ(qq);
+				//window.location.href = 'mqq://im/chat?chat_type=wpa&uin='+qq+'&version=1&src_type=web';
+			}
+		}
+		
+		//呼出QQ群
+		function openQQun(){
+			if(client == 'iphone'){
+				$("#i_openNewWind").remove();
+                $(document.body).append("<iframe id='i_openNewWind' src='mqq://qqGroup?qqun=<?=$qq_qun?>&key=<?=$qq_qun_key_iphone?>' style='width:0px; height:0px; display:none'></iframe>");
+			} else if(client == 'android') {
+				window.xiaoshuo.callQQQun("<?=$qq_qun_key_android?>");
+				//window.location.href = 'http://shang.qq.com/wpa/qunwpa?idkey=<?=$qq_qun_key_iphone?>';
+			}
+		}
+    </script>
+
+  </body>
+</html>
